@@ -185,7 +185,7 @@ class Standa_10MWA168(Instrument):
                            np.ceil(current_position / self.revolution + 2) * self.revolution
         position_wheel_1 = self.offset_wheel_1 + self.distance * filter_wheel_1 + \
                            np.ceil(current_position / self.revolution + 2) * self.revolution
-        print(position_wheel_1, position_wheel_2)
+
         if position_wheel_1 > position_wheel_2:
             print('new', position_wheel_1, position_wheel_2)
             position_wheel_1 -= self.revolution
